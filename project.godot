@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Tic Tac Toe"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://misc/Icon.png"
+
+[autoload]
+
+save_manager="*res://Scripts/save_manager.gd"
+Minimax="*res://Scripts/minimax.gd"
+http_node="*res://Scripts/Node.gd"
+
+[display]
+
+window/size/viewport_width=192
+window/size/viewport_height=217
+window/size/window_width_override=384
+window/size/window_height_override=384
+window/stretch/mode="canvas_items"
